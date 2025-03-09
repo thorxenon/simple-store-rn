@@ -7,6 +7,8 @@ export default function CategoryLayout (){
                 name="list"
                 options={{ title: "Categories" }}
             />
+
+            <Stack.Screen name="[id]"/>
         </Stack>
     )
 }

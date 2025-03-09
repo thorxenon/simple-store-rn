@@ -1,17 +1,9 @@
 import { Image, Pressable, StyleSheet, Text, View } from "react-native"
 import { Product } from "../types/product"
 import { Link } from "expo-router"
+import { number2Currency } from "../handlers/number2Currency"
 
 export const ProductItem = ({ id, title, description, price, image }: Product) => {
-
-    const numberAsCurrency = (number: number)=>{
-        const format = new Intl.NumberFormat("pt-br",{
-            style:"currency",
-            currency: "BRL",
-        });
-
-        return format.format(number);
-    }
 
     return(
         <Link href={`/product/${id}`} asChild>
@@ -23,7 +15,7 @@ export const ProductItem = ({ id, title, description, price, image }: Product) =
                 <View style={styles.info}>
                     <Text style={styles.title}>{title}</Text>
                     <Text>{description}</Text>
-                    <Text style={styles.price}>{numberAsCurrency(price)}</Text>
+                    <Text style={styles.price}>{number2Currency(price, "pt-br", "BRL")}</Text>
                 </View>
                
             </Pressable>
