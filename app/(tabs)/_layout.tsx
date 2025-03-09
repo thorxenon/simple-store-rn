@@ -26,7 +26,7 @@ export default function TabLayout(){
                         color={color}
                     />
                 }}
-            />
+            />*/}
 
             <Tabs.Screen
                 name="about"
@@ -38,7 +38,7 @@ export default function TabLayout(){
                         color={color}
                     />
                 }}
-            /> */}
+            />
         </Tabs>
     )
 }
