@@ -16,7 +16,7 @@ export default function TabLayout(){
                 }}
             />
 
-            <Tabs.Screen
+            {/* <Tabs.Screen
                 name="categories"
                 options={{
                     title: "Categories",
@@ -38,7 +38,7 @@ export default function TabLayout(){
                         color={color}
                     />
                 }}
-            />
+            /> */}
         </Tabs>
     )
 }

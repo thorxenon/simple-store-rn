@@ -24,7 +24,7 @@ export default function Screen (){
             <Text style={styles.h2}>Simple app using the power of React Native</Text>
 
             <Button
-                text="Saiba mais"
+                text="Enter Store"
                 onClick={handleStart}
             />
         </SafeAreaView>
