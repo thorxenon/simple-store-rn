@@ -16,9 +16,10 @@ export default function TabLayout(){
                 }}
             />
 
-            {/* <Tabs.Screen
+            <Tabs.Screen
                 name="categories"
                 options={{
+                    headerShown: false,
                     title: "Categories",
                     tabBarIcon:({ color }) => <FontAwesome
                         size={28}
@@ -26,7 +27,7 @@ export default function TabLayout(){
                         color={color}
                     />
                 }}
-            />*/}
+            />
 
             <Tabs.Screen
                 name="about"
